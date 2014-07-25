@@ -4,7 +4,7 @@ set nocompatible
 " Enable file type detection
 filetype on
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -18,6 +18,7 @@ Plugin 'reedes/vim-pencil'
 Plugin 'kana/vim-textobj-user' " Dependency for vim-textobj-sentence
 Plugin 'reedes/vim-textobj-sentence'
 Plugin 'reedes/vim-lexical'
+Plugin 'tpope/vim-commentary'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -144,3 +145,7 @@ noremap <leader>W :w !sudo tee % > /dev/null<CR>
 set shiftwidth=2
 " Find matching brackets 
 set showmatch
+" No word wrap
+set nowrap
+" Overriding syntax files
+set runtimepath+=~/.vim/after/syntax
