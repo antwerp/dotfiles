@@ -18,7 +18,8 @@ Plugin 'reedes/vim-pencil'
 Plugin 'kana/vim-textobj-user' " Dependency for vim-textobj-sentence
 Plugin 'reedes/vim-textobj-sentence'
 Plugin 'reedes/vim-lexical'
-Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-commentary' " from Practical Vim (25)
+Plugin 'kana/vim-textobj-entire' " from Practical Vim (26)
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
