@@ -1,5 +1,3 @@
-" Setting up Vim for Vundle
-
 " Make Vim more useful
 set nocompatible
 
@@ -13,7 +11,6 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
-" Let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'ervandew/supertab'
 Plugin 'godlygeek/tabular'
@@ -25,6 +22,7 @@ Plugin 'reedes/vim-lexical'
 Plugin 'tpope/vim-commentary' " from Practical Vim (25)
 Plugin 'kana/vim-textobj-entire' " from Practical Vim (26)
 Plugin 'tpope/vim-unimpaired' " from Practical Vim (79)
+Plugin 'tpope/vim-rails' " from Practical Vim (97)
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -173,6 +171,8 @@ function! StripWhitespace()
 	call setpos('.', save_cursor)
 	call setreg('/', old_query)
 endfunction
+
+" Strip whitespace (,ss)
 noremap <leader>ss :call StripWhitespace()<CR>
 
 " Save a file as root (,W)
