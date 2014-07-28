@@ -196,3 +196,6 @@ set history=200
 " Have <C-p> and <c-n> filter command history
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
+
+" Easy expansion of active file directory -- Practical Vim (95)
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
