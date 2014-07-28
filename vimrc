@@ -20,6 +20,7 @@ Plugin 'reedes/vim-textobj-sentence'
 Plugin 'reedes/vim-lexical'
 Plugin 'tpope/vim-commentary' " from Practical Vim (25)
 Plugin 'kana/vim-textobj-entire' " from Practical Vim (26)
+Plugin 'tpope/vim-unimpaired' " from Practical Vim (79)
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -59,6 +60,7 @@ augroup END
 set clipboard=unnamed
 " Enhance command-line completion
 set wildmenu
+set wildmode=full
 " Allow cursor keys in insert mode
 set esckeys
 " Allow backspace in insert mode
@@ -150,3 +152,8 @@ set showmatch
 set nowrap
 " Overriding syntax files
 set runtimepath+=~/.vim/after/syntax
+" Longer history
+set history=200
+" Have <C-p> and <c-n> filter command history
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
