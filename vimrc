@@ -199,3 +199,9 @@ cnoremap <C-n> <Down>
 
 " Easy expansion of active file directory -- Practical Vim (95)
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
+" Disable use of arrow keys -- Practical Vim (109)
+noremap <Up> <Nop>
+noremap <Down> <Nop> 
+noremap <Left> <Nop> 
+noremap <Right> <Nop>
