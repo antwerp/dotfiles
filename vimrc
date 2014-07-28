@@ -23,12 +23,17 @@ Plugin 'tpope/vim-commentary' " from Practical Vim (25)
 Plugin 'kana/vim-textobj-entire' " from Practical Vim (26)
 Plugin 'tpope/vim-unimpaired' " from Practical Vim (79)
 Plugin 'tpope/vim-rails' " from Practical Vim (97)
+Plugin 'tpope/vim-surround' " from Practical Vim (129)
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
 filetype plugin on
 filetype plugin indent on
+
+" Autoload the matchit plugin -- from Practical Vim (129)
+runtime macros/matchit.vim
+
 
 " vim-pencil
 let g:pencil#wrapModeDefault = 'hard'   " or 'soft'
