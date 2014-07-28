@@ -24,6 +24,7 @@ Plugin 'kana/vim-textobj-entire' " from Practical Vim (26)
 Plugin 'tpope/vim-unimpaired' " from Practical Vim (79)
 Plugin 'tpope/vim-rails' " from Practical Vim (97)
 Plugin 'tpope/vim-surround' " from Practical Vim (129)
+Plugin 'tpope/vim-bundler' " from Practical Vim (136)
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
