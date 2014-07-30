@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/keng/.rvm/gems/ruby-2.1.2/bin:/Users/keng/.rvm/gems/ruby-2.1.2@global/bin:/Users/keng/.rvm/rubies/ruby-2.1.2/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/EPD64.framework/Versions/Current/bin:/Users/keng/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/keng/.rvm/bin"
+export PATH="/Users/keng/.rvm/gems/ruby-2.1.2/bin:/Users/keng/.rvm/gems/ruby-2.1.2@global/bin:/Users/keng/.rvm/rubies/ruby-2.1.2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/keng/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -69,6 +69,12 @@ export PATH="/Users/keng/.rvm/gems/ruby-2.1.2/bin:/Users/keng/.rvm/gems/ruby-2.1
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Set fc editor
+FCEDIT=/bin/zsh
+
+# Use vi key bindings for command-line editing
+bindkey -v
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
