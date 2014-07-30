@@ -38,3 +38,12 @@ set convert-meta off
 
 # Use Alt/Meta + Delete to delete the preceding word
 "\e[3;3~": kill-word
+
+# Never ring the bell, use a visible bell -- Learning Bash (175)
+set bell-style visible
+
+# Set editing mode to vi -- Learning Bash (176)
+set editing-mode vi
+
+# Enable application keypad -- Learning Bash (176)
+set enable-keypad on
