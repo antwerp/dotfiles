@@ -25,6 +25,7 @@ Plugin 'tpope/vim-unimpaired' " from Practical Vim (79)
 Plugin 'tpope/vim-rails' " from Practical Vim (97)
 Plugin 'tpope/vim-surround' " from Practical Vim (129)
 Plugin 'tpope/vim-bundler' " from Practical Vim (136)
+Plugin 'majutsushi/tagbar' " from http://blog.yux.ch/blog/2013/10/01/vim-with-ctags/
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -211,3 +212,6 @@ noremap <Up> <Nop>
 noremap <Down> <Nop> 
 noremap <Left> <Nop> 
 noremap <Right> <Nop>
+
+" Open Tagbar automatically -- http://blog.yux.ch/blog/2013/10/01/vim-with-ctags/
+" autocmd VimEnter * TagbarToggle
