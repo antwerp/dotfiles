@@ -1,1 +1,0 @@
-/Users/keng/.dotfiles/vim/syntax/json.vim

@@ -1,1 +1,0 @@
-/Users/keng/.dotfiles/vim/bundle/Vundle.vim/CONTRIBUTING.md

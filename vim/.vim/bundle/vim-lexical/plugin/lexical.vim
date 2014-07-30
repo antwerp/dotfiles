@@ -1,1 +1,0 @@
-/Users/keng/.dotfiles/vim/bundle/vim-lexical/plugin/lexical.vim

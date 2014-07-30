@@ -1,6 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/keng/Dropbox/vim/practical_vim'
-let g:netrw_dirhist_2='/Users/keng/Dropbox/vim/practical_vim/ex_mode'
-let g:netrw_dirhist_3='/Users/keng/Dropbox/vim/practical_vim/files/mvc'
-let g:netrw_dirhist_4='/Users/keng/Dropbox/vim/practical_vim/files/mvc/app/controllers'
+let g:netrw_dirhist_cnt =0

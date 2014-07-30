@@ -1,1 +1,0 @@
-/Users/keng/.dotfiles/vim/ftdetect/markdown.vim

@@ -1,1 +1,0 @@
-/Users/keng/.dotfiles/vim/bundle/vim-textobj-user/t/script-local.vim

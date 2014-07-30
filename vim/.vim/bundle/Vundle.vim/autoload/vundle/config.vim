@@ -1,1 +1,0 @@
-/Users/keng/.dotfiles/vim/bundle/Vundle.vim/autoload/vundle/config.vim

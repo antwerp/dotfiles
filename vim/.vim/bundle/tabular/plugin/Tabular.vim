@@ -1,1 +1,0 @@
-/Users/keng/.dotfiles/vim/bundle/tabular/plugin/Tabular.vim

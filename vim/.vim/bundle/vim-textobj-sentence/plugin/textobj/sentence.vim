@@ -1,1 +1,0 @@
-/Users/keng/.dotfiles/vim/bundle/vim-textobj-sentence/plugin/textobj/sentence.vim

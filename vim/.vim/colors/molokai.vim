@@ -1,1 +1,0 @@
-/Users/keng/.dotfiles/vim/colors/molokai.vim
