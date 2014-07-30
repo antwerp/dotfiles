@@ -82,5 +82,15 @@ bindkey -v
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+
+
+# Adding Byword and other applications to Terminal
+alias byword='open -a Byword'
+
+# Set default directory when Terminal launches
+# echo "cd ~/Code/squadup_2_0/"
+
+# Bash migrate alias for Rails 4 in action
+alias migrate='bin/rake db:migrate && bin/rake db:test:prepare'
