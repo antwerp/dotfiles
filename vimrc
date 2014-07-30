@@ -26,6 +26,7 @@ Plugin 'tpope/vim-rails' " from Practical Vim (97)
 Plugin 'tpope/vim-surround' " from Practical Vim (129)
 Plugin 'tpope/vim-bundler' " from Practical Vim (136)
 Plugin 'majutsushi/tagbar' " from http://blog.yux.ch/blog/2013/10/01/vim-with-ctags/
+Plugin 'altercation/vim-colors-solarized' " from http://fideloper.com/mac-vim-tmux 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
