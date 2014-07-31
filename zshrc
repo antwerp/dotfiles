@@ -1,3 +1,17 @@
+# Have bash and zsh share same history
+HISTFILE=~/.bash_history
+
+# Increase size of history
+HISTSIZE=500
+SAVEHIST=500
+
+# Have multiple shells append to history
+setopt append_history
+
+# Share history among differest shells
+setopt share_history
+# setopt inc_append_history
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -26,7 +40,7 @@ ZSH_THEME="robbyrussell"
 ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -51,7 +65,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/keng/.rvm/gems/ruby-2.1.2/bin:/Users/keng/.rvm/gems/ruby-2.1.2@global/bin:/Users/keng/.rvm/rubies/ruby-2.1.2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/keng/.rvm/bin"
+# export PATH="/Users/keng/.rvm/gems/ruby-2.1.2/bin:/Users/keng/.rvm/gems/ruby-2.1.2@global/bin:/Users/keng/.rvm/rubies/ruby-2.1.2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/keng/.rvm/bin"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/keng/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -70,14 +85,8 @@ export PATH="/Users/keng/.rvm/gems/ruby-2.1.2/bin:/Users/keng/.rvm/gems/ruby-2.1
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# Set fc editor
-FCEDIT=/bin/zsh
-
 # Use vi key bindings for command-line editing
 bindkey -v
-
-# Set default directory when Terminal launches
-# echo "cd ~/Code/squadup_2_0/"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
