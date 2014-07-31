@@ -76,21 +76,21 @@ FCEDIT=/bin/zsh
 # Use vi key bindings for command-line editing
 bindkey -v
 
+# Set default directory when Terminal launches
+# echo "cd ~/Code/squadup_2_0/"
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-
-
-# Adding Byword and other applications to Terminal
+# Edit with Byword
 alias byword='open -a Byword'
-
-# Set default directory when Terminal launches
-# echo "cd ~/Code/squadup_2_0/"
-
 # Bash migrate alias for Rails 4 in action
 alias migrate='bin/rake db:migrate && bin/rake db:test:prepare'
+# Quick go-to ~/dotfiles
+alias dot="cd ~/dotfiles"
+# Quick go-to ~/Code/squadup_2_0
+alias sup="cd ~/Code/squadup_2_0"
