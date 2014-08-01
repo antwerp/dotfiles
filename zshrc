@@ -18,6 +18,9 @@ setopt autocd
 # Prevent redirection from clobbering existing files
 setopt noclobber
 
+# Retrieving previous command inserts pipe to force clobbering
+setopt hist_allow_clobber
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
