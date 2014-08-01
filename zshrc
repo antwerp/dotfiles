@@ -15,6 +15,9 @@ setopt share_history
 # Type the name of a directory, zsh will change to it
 setopt autocd
 
+# Prevent redirection from clobbering existing files
+setopt noclobber
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
