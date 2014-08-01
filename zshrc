@@ -56,6 +56,15 @@ zstyle ':completion:*' list-separator '#'
 # Specify argement descriptions to completions
 zstyle ':completion:*' auto-description 'specify: %d'
 
+# Enable menu-selection
+zstyle ':completion*:default' menu 'select=0'
+
+# Bind 'accept' key in menu selection
+bindkey -M menuselect '\C-o' accept-and-menu-complete
+
+# Window selection
+zstyle ':completion:*:windows' menu on=0
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
