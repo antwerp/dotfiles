@@ -25,6 +25,9 @@ setopt hist_allow_clobber
 autoload -U compinit
 compinit
 
+# Enable completing parts of words
+setopt magic_equal_subst
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
