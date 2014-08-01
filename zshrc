@@ -21,6 +21,10 @@ setopt noclobber
 # Retrieving previous command inserts pipe to force clobbering
 setopt hist_allow_clobber
 
+# Enable zsh auto-complete
+autoload -U compinit
+compinit
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
