@@ -35,6 +35,27 @@ zstyle ':completion:*:default' list-prompt '%S%M matches%s'
 # Press 'q' to exit from pager
 bindkey -M listscroll q send-break
 
+# Display useful informational messages when completing
+zstyle ':completion:*' format %d
+
+# Display list of things zsh tried to complete
+zstyle ':completion:*:warnings' format 'No matches: %d'
+
+# Have completion system tell us what type of object it is completing
+zstyle ':completion:*:descriptions' format %B%d%b
+
+# Group different types of commands completed
+zstyle ':completion:*:-command-:*:(commands|builtins|reserved-words|aliases)' group-name commands
+
+# Enable per-match descriptions for completions
+zstyle ':completion:*' verbose yes
+
+# Set characters to separate matches from description
+zstyle ':completion:*' list-separator '#'
+
+# Specify argement descriptions to completions
+zstyle ':completion:*' auto-description 'specify: %d'
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
