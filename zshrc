@@ -28,6 +28,13 @@ compinit
 # Enable completing parts of words
 setopt magic_equal_subst
 
+# Display lots of matches in an internal pager
+zmodload zsh/complist
+zstyle ':completion:*:default' list-prompt '%S%M matches%s'
+
+# Press 'q' to exit from pager
+bindkey -M listscroll q send-break
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
