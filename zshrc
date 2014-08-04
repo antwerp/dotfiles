@@ -94,6 +94,24 @@ zstyle ':completion::prefix:::' completer _complete
 # Add space automatically when completing
 zstyle ':completion:*:prefix:*' add-space true
 
+# Configuring anchors in partial completions
+zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'm:{a-zA-Z}={A-Za-z}'
+
+# Excluding certain file types in matching
+zstyle ':completion:*:*files' ignored-patterns '*?.o' '*?~'
+
+# Excluding directories of source code control systems
+zstyle ':completion:*:*:cd:*' ignored-patterns '(*/|)(CVS|SCCS|.git)'
+
+# Ignoring matches when the same command has two or more arguments
+zstyle ':completion::*:(cvs-add|git-add|less|rm|vi|vim):*' ignore-line true
+
+# Ignore directories that make no sense to complete
+zstyle ':completion:*' ignore-parents parent pwd
+
+# Enable auto-resuming of jobs
+setopt auto_resume
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
