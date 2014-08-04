@@ -45,7 +45,8 @@ zstyle ':completion:*:warnings' format 'No matches: %d'
 zstyle ':completion:*:descriptions' format %B%d%b
 
 # Group different types of commands completed
-zstyle ':completion:*:-command-:*:(commands|builtins|reserved-words|aliases)' group-name commands
+zstyle ':completion:*:-command-:*:(commands|builtins|reserved-words|aliases)' \
+				group-name commands
 
 # Enable per-match descriptions for completions
 zstyle ':completion:*' verbose yes
@@ -64,6 +65,34 @@ bindkey -M menuselect '\C-o' accept-and-menu-complete
 
 # Window selection
 zstyle ':completion:*:windows' menu on=0
+
+# Enable menu selection in filename expansion
+setopt glob_complete
+
+# Bind Tab key to complete-word editor command
+bindkey '\C-i' complete-word
+
+# Insert the one match with the all-expansions tag
+zstyle ':completion:*:expand:*' tag-order all-expansions 
+
+# Set options for approximate completion
+zstyle ':completion:*:approximate:*' max-errors 2
+zstyle -e ':completion:*:approximate:*' max-errors \
+	    'reply=( $(( ($#PREFIX+$#SUFFIX)/3 )) )'
+
+# Enable case-insensitive matching
+zstyle ':completion:*:(^approximate):*' matcher-list 'm:{a-z}={A-Z}'
+
+# Enable completion in word
+setopt complete_in_word
+
+# Set up different types of completions
+zstyle ':completion:::::' completer _expand _complete _prefix _correct \
+				_approximate _ignored
+zstyle ':completion::prefix:::' completer _complete
+
+# Add space automatically when completing
+zstyle ':completion:*:prefix:*' add-space true
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
