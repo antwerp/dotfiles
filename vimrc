@@ -120,7 +120,7 @@ syntax on
 set cursorline
 
 " Make tabs as wide as two spaces
-set tabstop=4
+set tabstop=2
 
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
@@ -187,7 +187,7 @@ noremap <leader>ss :call StripWhitespace()<CR>
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
 " Set shift width (when indenting text)
-set shiftwidth=4
+set shiftwidth=2
 
 " Find matching brackets 
 set showmatch
