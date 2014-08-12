@@ -28,6 +28,7 @@ Plugin 'tpope/vim-bundler' " from Practical Vim (136)
 Plugin 'majutsushi/tagbar' " from http://blog.yux.ch/blog/2013/10/01/vim-with-ctags/
 Plugin 'altercation/vim-colors-solarized' " from http://fideloper.com/mac-vim-tmux 
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'itspriddle/vim-marked'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -124,8 +125,8 @@ set cursorline
 set tabstop=2
 
 " Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-set list
+" set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+" set list
 
 " Highlight searches
 set hlsearch
@@ -217,3 +218,6 @@ noremap <Right> <Nop>
 
 " Open Tagbar automatically -- http://blog.yux.ch/blog/2013/10/01/vim-with-ctags/
 " autocmd VimEnter * TagbarToggle
+
+" Quick save -- http://vim.wikia.com/wiki/Quick_save -- http://vim.wikia.com/wiki/Quick_save
+noremap <Leader>s :update<CR>
