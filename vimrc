@@ -221,3 +221,6 @@ noremap <Right> <Nop>
 
 " Quick save -- http://vim.wikia.com/wiki/Quick_save -- http://vim.wikia.com/wiki/Quick_save
 noremap <Leader>s :update<CR>
+
+" Map 'jj' in insert mode to do the same as the escape key.
+:imap jj <Esc>
