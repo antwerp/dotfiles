@@ -222,5 +222,8 @@ noremap <Right> <Nop>
 " Quick save -- http://vim.wikia.com/wiki/Quick_save -- http://vim.wikia.com/wiki/Quick_save
 noremap <Leader>s :update<CR>
 
-" Map 'jj' in insert mode to do the same as the escape key.
+" Map 'jj' in insert mode to do the same as the escape key. -- http://bencrowder.net/files/vim-fu/
 :imap jj <Esc>
+
+" Sets paste toggle to the F5 key, so you can paste text without the indentation going berserk. -- http://bencrowder.net/files/vim-fu/ 
+:set pastetoggle=<F5>
