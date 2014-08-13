@@ -29,6 +29,7 @@ Plugin 'majutsushi/tagbar' " from http://blog.yux.ch/blog/2013/10/01/vim-with-ct
 Plugin 'altercation/vim-colors-solarized' " from http://fideloper.com/mac-vim-tmux 
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'itspriddle/vim-marked'
+Plugin 'bling/vim-airline' 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
