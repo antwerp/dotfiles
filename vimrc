@@ -71,6 +71,9 @@ augroup END
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
+" if has('unnamedplus')
+" 	  set clipboard=unnamed,unnamedplus
+" endif
 
 " Enhance command-line completion
 set wildmenu
@@ -142,7 +145,7 @@ set incsearch
 set laststatus=2
 
 " Disable mouse in all modes 
-set mouse=""
+" set mouse=""
 
 " Disable error bells
 set noerrorbells
