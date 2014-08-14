@@ -1,3 +1,11 @@
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+	[ -r "$file" ] && source "$file"
+done
+unset file
+
 # Have bash and zsh share same history
 HISTFILE=~/.bash_history
 
@@ -163,28 +171,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-##### User configuration 
-
-### Configuring `$PATH`
-
-# Homebrew brews (such as Vim 7.4) 
-export PATH="/usr/local/bin"
-
-# MacPorts ports
-export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
-
-# Enthought Python Distribution -- note different style of string interpolation
-export PATH="${PATH}:/Library/Frameworks/EPD64.framework/Versions/Current/bin"
-export MKL_NUM_THREADS=1
-
-# Ruby Version Manager (RVM)
-export PATH="$PATH:$HOME/.rvm/bin" 
-
-# User packages
-export PATH="$PATH:$HOME/bin"
-
-# System packages
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin
+# User configuration 
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -232,3 +219,4 @@ alias v=vim
 alias g=git
 # alias gs=git status
 # alias gc=git checkout
+
