@@ -170,14 +170,12 @@ source $ZSH/oh-my-zsh.sh
 # Homebrew packages  
 export PATH="/usr/local/bin:/opt/local/bin"
 
-# Enthought Python Distribution
-export PATH="/Library/Frameworks/EPD64.framework/Versions/Current/bin:${PATH}"
+# Enthought Python Distribution -- note different style of string interpolation
+export PATH="${PATH}:/Library/Frameworks/EPD64.framework/Versions/Current/bin"
 export MKL_NUM_THREADS=1
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# Add `~/bin` to the `$PATH`
-# export PATH="$HOME/bin:$PATH"
+# Add `~/bin` 
+export PATH="$PATH:$HOME/bin"
 
 # Use new Vim instead of default
 # export PATH=/usr/local/bin:$PATH 
