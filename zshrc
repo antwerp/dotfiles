@@ -166,8 +166,17 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export PATH="/Users/keng/.rvm/gems/ruby-2.1.2/bin:/Users/keng/.rvm/gems/ruby-2.1.2@global/bin:/Users/keng/.rvm/rubies/ruby-2.1.2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/keng/.rvm/bin"
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/keng/.rvm/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/keng/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+# Add `~/bin` to the `$PATH`
+# export PATH="$HOME/bin:$PATH"
+
+# Use new Vim instead of default
+# export PATH=/usr/local/bin:$PATH 
+
+# Add RVM to PATH for scripting
+# export PATH="$PATH:$HOME/.rvm/bin" 
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
