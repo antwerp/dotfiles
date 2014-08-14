@@ -1,0 +1,4 @@
+[submodule "vim/bundle/vim-multiple-cursors"]
+	path = vim/vim-multiple-cursors
+	url = https://github.com/paradigm/vim-multicursor
+	ignore = dirty
