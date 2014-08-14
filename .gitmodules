@@ -1,4 +1,94 @@
-[submodule "vim/bundle/vim-multiple-cursors"]
-	path = vim/vim-multiple-cursors
+[submodule "vim/Vundle.vim"]
+	path = vim/bundle/Vundle.vim
+	url = https://github.com/gmarik/Vundle.vim
+	ignore = dirty
+
+[submodule "vim/supertab"]
+	path = vim/bundle/supertab
+	url = https://github.com/ervandew/supertab 
+	ignore = dirty
+
+[submodule "vim/tabular"]
+	path = vim/bundle/tabular
+	url = http://github.com/godlygeek/tabular/
+	ignore = dirty
+
+[submodule "vim/tagbar"]
+	path = vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar
+	ignore = dirty
+
+[submodule "vim/vim-airline"]
+	path = vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline
+	ignore = dirty
+
+[submodule "vim/vim-bundler"]
+	path = vim/bundle/vim-bundler
+	url = https://github.com/tpope/vim-bundler
+	ignore = dirty
+
+[submodule "vim/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
+	ignore = dirty
+
+[submodule "vim/vim-commentary"]
+	path = vim/bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+	ignore = dirty
+
+[submodule "vim/vim-lexical"]
+	path = vim/bundle/vim-lexical
+	url = https://github.com/reedes/vim-lexical
+	ignore = dirty
+
+[submodule "vim/vim-markdown"]
+	path = vim/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown
+	ignore = dirty
+
+[submodule "vim/vim-marked"]
+	path = vim/bundle/vim-marked
+	url = https://github.com/itspriddle/vim-marked
+	ignore = dirty
+
+[submodule "vim/vim-multiple-cursors"]
+	path = vim/bundle/vim-multiple-cursors
 	url = https://github.com/paradigm/vim-multicursor
+	ignore = dirty
+
+[submodule "vim/vim-pencil"]
+	path = vim/bundle/vim-pencil
+	url = https://github.com/reedes/vim-pencil
+	ignore = dirty
+
+[submodule "vim/vim-rails"]
+	path = vim/bundle/vim-rails
+	url = https://github.com/tpope/vim-rails
+	ignore = dirty
+
+[submodule "vim/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
+	ignore = dirty
+
+[submodule "vim/vim-textobj-entire"]
+	path = vim/bundle/vim-textobj-entire
+	url = https://github.com/kana/vim-textobj-entire
+	ignore = dirty
+
+[submodule "vim/vim-textobj-sentence"]
+	path = vim/bundle/vim-textobj-sentence
+	url = https://github.com/reedes/vim-textobj-sentence
+	ignore = dirty
+
+[submodule "vim/vim-textobj-user"]
+	path = vim/bundle/vim-textobj-user
+	url = https://github.com/kana/vim-textobj-user
+	ignore = dirty
+
+[submodule "vim/vim-unimpaired"]
+	path = vim/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
 	ignore = dirty
