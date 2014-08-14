@@ -30,6 +30,7 @@ Plugin 'altercation/vim-colors-solarized' " from http://fideloper.com/mac-vim-tm
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'itspriddle/vim-marked'
 Plugin 'bling/vim-airline' 
+Plugin 'jcf/vim-latex'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
