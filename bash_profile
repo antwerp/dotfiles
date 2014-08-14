@@ -1,14 +1,3 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH"
-
-# Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
-	[ -r "$file" ] && source "$file"
-done
-unset file
-
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
@@ -61,13 +50,6 @@ bid() {
 	# return the result or an error message
 	[[ -z $bundleid || $bundleid = "" ]] && echo "Error getting bundle ID for \"$@\"" || echo "$location: $bundleid"
 }
-# Setting PATH for EPD-7.3-2
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/EPD64.framework/Versions/Current/bin:${PATH}"
-export PATH
-
-MKL_NUM_THREADS=1
-export MKL_NUM_THREADS
 
 ##
 # Your previous /Users/keng/.bash_profile file was backed up as /Users/keng/.bash_profile.macports-saved_2014-05-19_at_20:18:22
@@ -87,12 +69,3 @@ source ~/.profile
 # Git auto-completion from 
 # http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks
 source ~/.git-completion.bash
-
-# Adding Byword and other applications to Terminal
-alias byword='open -a Byword'
-
-# Set default directory when Terminal launches
-# echo "cd ~/Code/squadup_2_0/"
-
-# Bash migrate alias for Rails 4 in action
-alias migrate='bin/rake db:migrate && bin/rake db:test:prepare'
