@@ -167,21 +167,24 @@ source $ZSH/oh-my-zsh.sh
 
 ### Configuring `$PATH`
 
-# Homebrew packages  
-export PATH="/usr/local/bin:/opt/local/bin"
+# Homebrew brews (such as Vim 7.4) 
+export PATH="/usr/local/bin"
+
+# MacPorts ports
+export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
 
 # Enthought Python Distribution -- note different style of string interpolation
 export PATH="${PATH}:/Library/Frameworks/EPD64.framework/Versions/Current/bin"
 export MKL_NUM_THREADS=1
 
-# Add `~/bin` 
+# Ruby Version Manager (RVM)
+export PATH="$PATH:$HOME/.rvm/bin" 
+
+# User packages
 export PATH="$PATH:$HOME/bin"
 
-# Use new Vim instead of default
-# export PATH=/usr/local/bin:$PATH 
-
-# Add RVM to PATH for scripting
-# export PATH="$PATH:$HOME/.rvm/bin" 
+# System packages
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
