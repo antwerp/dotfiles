@@ -232,3 +232,7 @@ noremap <Leader>s :update<CR>
 
 " Sets paste toggle to the F5 key, so you can paste text without the indentation going berserk. -- http://bencrowder.net/files/vim-fu/ 
 :set pastetoggle=<F5>
+
+" Exit vim more quickly -- http://unix.stackexchange.com/questions/93144/exit-vim-more-quickly
+nnoremap <leader><leader> :xa<cr>
+inoremap <leader><leader> <esc>:xa<cr>
