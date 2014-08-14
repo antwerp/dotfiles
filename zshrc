@@ -163,10 +163,16 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+##### User configuration 
 
-# export PATH="/Users/keng/.rvm/gems/ruby-2.1.2/bin:/Users/keng/.rvm/gems/ruby-2.1.2@global/bin:/Users/keng/.rvm/rubies/ruby-2.1.2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/keng/.rvm/bin"
-export PATH="/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:Users/keng/.rvm/bin"
+### Configuring `$PATH`
+
+# Homebrew packages  
+export PATH="/usr/local/bin:/opt/local/bin"
+
+# Enthought Python Distribution
+export PATH="/Library/Frameworks/EPD64.framework/Versions/Current/bin:${PATH}"
+export MKL_NUM_THREADS=1
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
