@@ -1,15 +1,3 @@
-# Git completion -- https://github.com/git/git/tree/master/contrib/completion
-zstyle ':completion:*:*:git:*' script ~/dotfiles/oh-my-zsh/custom/git-completion.bash
-fpath=(~/dotfiles $fpath)
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
-
 # Have bash and zsh share same history
 HISTFILE=~/.bash_history
 
@@ -194,12 +182,17 @@ bindkey -v
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2 | tr ' ' '\n')" scp sftp ssh
 
-# Add tab completion for `defaults read|write NSGlobalDomain`
-# You could just use `-g` instead, but I like being explicit
-complete -W "NSGlobalDomain" defaults
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git)
 
-# Add `killall` tab completion for common apps
-complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall
+source $ZSH/oh-my-zsh.sh
+
+# Git completion -- https://github.com/git/git/tree/master/contrib/completion
+zstyle ':completion:*:*:git:*' script ~/dotfiles/oh-my-zsh/custom/git-completion.bash
+fpath=(~/dotfiles $fpath)
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
