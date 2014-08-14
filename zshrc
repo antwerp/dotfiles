@@ -202,25 +202,3 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-
-# Edit with Byword
-alias byword='open -a Byword'
-
-# Bash migrate alias for Rails 4 in action
-alias migrate='bin/rake db:migrate && bin/rake db:test:prepare'
-
-# Run Sidekiq for SquadUP dev
-alias sk="bundle exec sidekiq -c 5 -C config/sidekiq.yml"
-
-# Go to dot files 
-alias dot="cd ~/dotfiles"
-
-# Vim aliases
-alias v=vim
-
-# Git aliases
-alias g=git
-# alias gs=git status
-# alias gc=git checkout
