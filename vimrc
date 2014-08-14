@@ -144,8 +144,9 @@ set incsearch
 " Always show status line
 set laststatus=2
 
-" Disable mouse in all modes 
+" Enable mouse in all modes 
 " set mouse=""
+set mouse=a
 
 " Disable error bells
 set noerrorbells
