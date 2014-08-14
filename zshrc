@@ -166,7 +166,8 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export PATH="/Users/keng/.rvm/gems/ruby-2.1.2/bin:/Users/keng/.rvm/gems/ruby-2.1.2@global/bin:/Users/keng/.rvm/rubies/ruby-2.1.2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/keng/.rvm/bin"
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/keng/.rvm/bin"
+export PATH="/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:Users/keng/.rvm/bin"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Add `~/bin` to the `$PATH`
@@ -204,13 +205,23 @@ bindkey -v
 #
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+
 # Edit with Byword
 alias byword='open -a Byword'
+
 # Bash migrate alias for Rails 4 in action
 alias migrate='bin/rake db:migrate && bin/rake db:test:prepare'
+
 # Run Sidekiq for SquadUP dev
 alias sk="bundle exec sidekiq -c 5 -C config/sidekiq.yml"
-# Quick go-to ~/dotfiles
+
+# Go to dot files 
 alias dot="cd ~/dotfiles"
-# Quick go-to ~/Code/squadup_2_0
-alias sup="cd ~/Code/squadup_2_0"
+
+# Vim aliases
+alias v=vim
+
+# Git aliases
+alias g=git
+# alias gs=git status
+# alias gc=git checkout
