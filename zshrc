@@ -9,7 +9,7 @@ SAVEHIST=500
 setopt append_history
 
 # Share history among differest shells
-setopt share_history
+# setopt share_history
 # setopt inc_append_history
 
 # Type the name of a directory, zsh will change to it
