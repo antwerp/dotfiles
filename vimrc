@@ -236,4 +236,4 @@ noremap <Leader>s :update<CR>
 
 " Exit vim more quickly -- http://unix.stackexchange.com/questions/93144/exit-vim-more-quickly
 nnoremap <leader><leader> :xa<cr>
-inoremap <leader><leader> <esc>:xa<cr>
+" inoremap <leader><leader> <esc>:xa<cr>
