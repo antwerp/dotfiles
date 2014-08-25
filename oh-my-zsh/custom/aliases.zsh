@@ -168,3 +168,6 @@ alias sidekiq="bundle exec sidekiq -c 5 -C config/sidekiq.yml"
 alias g=git
 # alias gs=git status
 # alias gc=git checkout
+
+# Class
+alias arc="cd ~/Dropbox/cs250"
