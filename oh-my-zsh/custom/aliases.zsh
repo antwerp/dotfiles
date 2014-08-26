@@ -169,5 +169,5 @@ alias g=git
 # alias gs=git status
 # alias gc=git checkout
 
-# Class
-alias arc="cd ~/Dropbox/cs250"
+# Common folders
+alias box="cd ~/Dropbox"
