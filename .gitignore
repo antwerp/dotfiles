@@ -1,5 +1,6 @@
 vim/swaps
 vim/bundle
+vim/spell
 vim/.netrwhist
 *~
 *.swp
