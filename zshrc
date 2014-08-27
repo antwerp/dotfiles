@@ -173,9 +173,6 @@ COMPLETION_WAITING_DOTS="true"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# Use vi key bindings for command-line editing
-bindkey -v
-
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
@@ -193,6 +190,9 @@ source $ZSH/oh-my-zsh.sh
 # Git completion -- https://github.com/git/git/tree/master/contrib/completion
 zstyle ':completion:*:*:git:*' script ~/dotfiles/oh-my-zsh/custom/git-completion.bash
 fpath=(~/dotfiles $fpath)
+
+# Use vi key bindings for command-line editing
+bindkey -v
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
