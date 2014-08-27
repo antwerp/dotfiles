@@ -51,7 +51,8 @@ augroup pencil
 	autocmd FileType text call pencil#init({'wrap': 'hard'})
 augroup END
 
-augroup lexical " vim-lexical
+" vim-lexical
+augroup lexical 
 	autocmd!
 	autocmd FileType markdown call lexical#init()
 	autocmd FileType textile call lexical#init()
@@ -229,7 +230,7 @@ noremap <Right> <Nop>
 noremap <Leader>s :update<CR>
 
 " Map 'jj' in insert mode to do the same as the escape key. -- http://bencrowder.net/files/vim-fu/
-" :imap jj <Esc>
+:imap jj <Esc>
 
 " Sets paste toggle to the F5 key, so you can paste text without the indentation going berserk. -- http://bencrowder.net/files/vim-fu/ 
 :set pastetoggle=<F5>
