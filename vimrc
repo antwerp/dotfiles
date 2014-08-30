@@ -51,10 +51,9 @@ augroup pencil
 	autocmd FileType text call pencil#init({'wrap': 'hard'})
 augroup END
 
-" vim-lexical
-augroup lexical 
+augroup lexical " vim-lexical
 	autocmd!
-	autocmd FileType markdown call lexical#init()
+	autocmd FileType markdown call lexical#init({ 'spell': 0 })
 	autocmd FileType textile call lexical#init()
 	autocmd FileType text call lexical#init({ 'spell': 0 })
 augroup END
