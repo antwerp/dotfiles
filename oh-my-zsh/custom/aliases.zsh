@@ -148,12 +148,13 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 alias v=vim
 
 # Go to dot files 
-alias dot="vim ~/dotfiles"
+alias dot="cd ~/dotfiles"
 
 # ZSH related
 alias zshconfig="vim ~/.zshrc"
 alias zshreload="source ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+alias vimconfig="vim ~/.vimrc"
 
 # Edit with Byword
 alias byword='open -a Byword'
