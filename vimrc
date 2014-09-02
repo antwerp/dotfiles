@@ -59,6 +59,9 @@ augroup lexical " vim-lexical
 	autocmd FileType text call lexical#init({ 'spell': 0 })
 augroup END
 
+" SingleCompile
+nmap <Leader>c :SCCompile<cr>
+nmap <Leader>r :SCCompileRun<cr>
 
 "
 " Brief help
