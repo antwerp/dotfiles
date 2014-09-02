@@ -31,6 +31,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'itspriddle/vim-marked'
 Plugin 'bling/vim-airline' 
 Plugin 'jcf/vim-latex'
+Plugin 'xuhdev/SingleCompile' " http://www.topbug.net/blog/2012/03/07/use-singlecompile-to-compile-and-run-a-single-source-file-easily-in-vim/
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,7 +54,7 @@ augroup END
 
 augroup lexical " vim-lexical
 	autocmd!
-	autocmd FileType markdown call lexical#init({ 'spell': 0 })
+	autocmd FileType markdown call lexical#init()
 	autocmd FileType textile call lexical#init()
 	autocmd FileType text call lexical#init({ 'spell': 0 })
 augroup END
