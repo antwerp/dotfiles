@@ -2,6 +2,10 @@ vim/swaps
 vim/bundle
 vim/spell
 vim/.netrwhist
+vim/undo
+gem/specs
+oh-my-zsh/
+!/oh-my-zsh/custom
 *~
 *.swp
 *.swo
