@@ -148,7 +148,7 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 alias v=vim
 
 # Go to dot files 
-alias dot="cd ~/dotfiles"
+alias dot="vim ~/dotfiles"
 
 # ZSH related
 alias zshconfig="vim ~/.zshrc"
