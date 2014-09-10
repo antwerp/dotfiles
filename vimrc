@@ -20,7 +20,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 """""""""""""""""""""""""""""""""
-" 				LIST OF PLUGINS
+"		LIST OF PLUGINS
 """""""""""""""""""""""""""""""""
 
 Plugin 'gmarik/Vundle.vim'
@@ -38,16 +38,17 @@ Plugin 'tpope/vim-rails' " from Practical Vim (97)
 Plugin 'tpope/vim-surround' " from Practical Vim (129)
 Plugin 'tpope/vim-bundler' " from Practical Vim (136)
 Plugin 'majutsushi/tagbar' 
-				" from http://blog.yux.ch/blog/2013/10/01/vim-with-ctags/
+	" from http://blog.yux.ch/blog/2013/10/01/vim-with-ctags/
 Plugin 'altercation/vim-colors-solarized' 
-				" http://fideloper.com/mac-vim-tmux 
+	" http://fideloper.com/mac-vim-tmux 
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'itspriddle/vim-marked'
 Plugin 'bling/vim-airline' 
 Plugin 'gerw/vim-latex-suite'
 " Plugin 'xuhdev/SingleCompile' " 
-				" http://www.topbug.net/blog/2012/03/07/use-singlecompile-to-compile-and-run-a-single-source-file-easily-in-vim/
+" http://www.topbug.net/blog/2012/03/07/use-singlecompile-to-compile-and-run-a-single-source-file-easily-in-vim/
 Plugin 'vim-scripts/c.vim'
+Plugin 'itspriddle/vim-marked'
+Plugin 'greyblake/vim-preview'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -76,8 +77,11 @@ augroup END
 " use g++ compiler for c.vim
 let g:C_CCompiler = 'g++'
 
+" Configure Marked to open the right application 
+let g:marked_app = "Marked"
+
 """""""""""""""""""""""""""""""""
-" 		VUNDLE INSTRUCTIONS	
+" 		VUNDLE INSTRUCTIONS
 """""""""""""""""""""""""""""""""
 
 "
@@ -92,7 +96,7 @@ let g:C_CCompiler = 'g++'
 
 
 """""""""""""""""""""""""""""""""
-" 		NON-VUNDLE PLUGINS	
+" 		NON-VUNDLE PLUGINS
 """""""""""""""""""""""""""""""""
 
 " Autoload the matchit plugin -- from Practical Vim (129)
@@ -106,7 +110,7 @@ set runtimepath+=~/.vim/after/syntax
 " autocmd VimEnter * TagbarToggle
 
 """""""""""""""""""""""""""""""""
-" 				CLIPBOARD
+"			CLIPBOARD
 """""""""""""""""""""""""""""""""
 
 " Use the OS clipboard by default 
@@ -122,7 +126,7 @@ set clipboard=unnamed
 :set pastetoggle=<F5>
 
 """""""""""""""""""""""""""""""""
-" 				BASIC
+"			BASIC
 """""""""""""""""""""""""""""""""
 
 " Opening a new file when the current buffer has unsaved changes
@@ -170,7 +174,7 @@ set undolevels=1000
 set undofile
 
 """""""""""""""""""""""""""""""""
-" 					MOVEMENT
+"			MOVEMENT
 """""""""""""""""""""""""""""""""
 
 " Allow cursor keys in insert mode
@@ -184,7 +188,7 @@ set backspace=indent,eol,start
 set mouse=a
 
 """""""""""""""""""""""""""""""""
-" 						UI
+"				UI
 """""""""""""""""""""""""""""""""
 " Use Molokai color scheme
 syntax enable
@@ -265,7 +269,7 @@ set gdefault
 set hlsearch
 
 """""""""""""""""""""""""""""""""
-" 					EDITING
+"				EDITING
 """""""""""""""""""""""""""""""""
 
 " Handle long lines correctly 
@@ -302,7 +306,7 @@ set smarttab
 au FocusLost * :wa
 
 """""""""""""""""""""""""""""""""
-" 			COMMAND SHORTCUTS
+"			COMMAND SHORTCUTS
 """""""""""""""""""""""""""""""""
 
 " Change mapleader
@@ -331,7 +335,7 @@ vnoremap <F1> <ESC>
 nnoremap ; :
 
 """""""""""""""""""""""""""""""""
-" 			MOVEMENT SHORTCUTS
+"		MOVEMENT SHORTCUTS
 """""""""""""""""""""""""""""""""
 
 " Disable use of arrow keys and use hjkl instead 
@@ -363,7 +367,7 @@ nnoremap <leader><leader> :xa<cr>
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
 """""""""""""""""""""""""""""""""
-" 			SEARCH SHORTCUTS
+"		SEARCH SHORTCUTS
 """""""""""""""""""""""""""""""""
 
 " Turn off Vim's default regex characters 
@@ -378,7 +382,7 @@ vnoremap / /\v
 nnoremap <leader><space> :noh<cr>
 
 """""""""""""""""""""""""""""""""
-" 			EDITING SHORTCUTS
+"		EDITING SHORTCUTS
 """""""""""""""""""""""""""""""""
 
 " Navigate bracket pairs
@@ -398,7 +402,7 @@ endfunction
 
 
 """""""""""""""""""""""""""""""""
-" 			WINDOW SHORTCUTS
+"		WINDOW SHORTCUTS
 """""""""""""""""""""""""""""""""
 
 " Open a new vertical window and switch to it
