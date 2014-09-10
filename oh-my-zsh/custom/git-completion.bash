@@ -475,16 +475,16 @@ __git_complete_revlist_file ()
 
 		__gitcomp_nl "$(git --git-dir="$(__gitdir)" ls-tree "$ls" 2>/dev/null \
 				| sed '/^100... blob /{
-				           s,^.*	,,
-				           s,$, ,
+					   s,^.*	,,
+					   s,$, ,
 				       }
 				       /^120000 blob /{
-				           s,^.*	,,
-				           s,$, ,
+					   s,^.*	,,
+					   s,$, ,
 				       }
 				       /^040000 tree /{
-				           s,^.*	,,
-				           s,$,/,
+					   s,^.*	,,
+					   s,$,/,
 				       }
 				       s/^.*	//')" \
 			"$pfx" "$cur_" ""

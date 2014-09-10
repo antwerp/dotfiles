@@ -1,6 +1,6 @@
 # Configuring `$PATH`
 
-# Homebrew brews (such as Vim 7.4) 
+# Homebrew brews (such as Vim 7.4)
 export PATH="/usr/local/bin"
 
 # MacPorts ports
@@ -14,10 +14,10 @@ export PATH="${PATH}:/Library/Frameworks/EPD64.framework/Versions/Current/bin"
 export MKL_NUM_THREADS=1
 
 # Ruby Version Manager (RVM)
-export PATH="$PATH:$HOME/.rvm/bin" 
+export PATH="$PATH:$HOME/.rvm/bin"
 
-# Ruby Gems 
-export PATH="$PATH:$HOME/.rvm/gems" 
+# Ruby Gems
+export PATH="$PATH:$HOME/.rvm/gems"
 
 # User packages
 export PATH="$PATH:$HOME/bin"

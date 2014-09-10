@@ -45,20 +45,20 @@ wd_warp()
 {
     if [[ $1 =~ "^\.+$" ]]
     then
-        if [[ $#1 < 2 ]]
+	if [[ $#1 < 2 ]]
         then
             wd_print_msg $YELLOW "Warping to current directory?"
         else
             (( n = $#1 - 1 ))
-            #wd_print_msg $BLUE "Warping..."
+	    #wd_print_msg $BLUE "Warping..."
             cd -$n > /dev/null
         fi
     elif [[ ${points[$1]} != "" ]]
     then
-        #wd_print_msg $BLUE "Warping..."
-        cd ${points[$1]}
+	#wd_print_msg $BLUE "Warping..."
+	cd ${points[$1]}
     else
-        wd_print_msg $RED "Unknown warp point '$1'"
+	wd_print_msg $RED "Unknown warp point '$1'"
     fi
 }
 
@@ -66,14 +66,14 @@ wd_add()
 {
     if [[ $2 =~ "^\.+$" || $2 =~ "^\s*$" ]]
     then
-        wd_print_msg $RED "Illegal warp point (see README)."
+	wd_print_msg $RED "Illegal warp point (see README)."
     elif [[ ${points[$2]} == "" ]] || $1
     then
-        wd_remove $2 > /dev/null
-        print "$2:$PWD" >> $CONFIG
+	wd_remove $2 > /dev/null
+	print "$2:$PWD" >> $CONFIG
         wd_print_msg $GREEN "Warp point added"
     else
-        wd_print_msg $YELLOW "Warp point '$2' already exists. Use 'add!' to overwrite."
+	wd_print_msg $YELLOW "Warp point '$2' already exists. Use 'add!' to overwrite."
     fi
 }
 
@@ -81,14 +81,14 @@ wd_remove()
 {
     if [[ ${points[$1]} != "" ]]
     then
-        if wd_tmp=`sed "/^$1:/d" $CONFIG`
+	if wd_tmp=`sed "/^$1:/d" $CONFIG`
         then
-            # `>!` forces overwrite
-            # we need this if people use `setopt NO_CLOBBER`
-            echo $wd_tmp >! $CONFIG
+	    # `>!` forces overwrite
+	    # we need this if people use `setopt NO_CLOBBER`
+	    echo $wd_tmp >! $CONFIG
             wd_print_msg $GREEN "Warp point removed"
         else
-            wd_print_msg $RED "Warp point unsuccessfully removed. Sorry!"
+	    wd_print_msg $RED "Warp point unsuccessfully removed. Sorry!"
         fi
     else
         wd_print_msg $RED "Warp point was not found"
@@ -112,7 +112,7 @@ wd_list_all()
             key=${arr[1]}
             val=${arr[2]}
 
-            print "\t" $key "\t -> \t" $val
+	    print "\t" $key "\t -> \t" $val
         fi
     done < $CONFIG
 }
@@ -121,9 +121,9 @@ wd_print_msg()
 {
     if [[ $1 == "" || $2 == "" ]]
     then
-        print " $RED*$NOC Could not print message. Sorry!"
+	print " $RED*$NOC Could not print message. Sorry!"
     else
-        print " $1*$NOC $2"
+	print " $1*$NOC $2"
     fi
 }
 
@@ -163,7 +163,7 @@ else
 
     for i
     do
-        case "$i"
+	case "$i"
             in
             -a|--add|add)
                 wd_add false $2
@@ -190,7 +190,7 @@ else
                 break
                 ;;
             *)
-                wd_warp $i
+		wd_warp $i
                 break
                 ;;
             --)

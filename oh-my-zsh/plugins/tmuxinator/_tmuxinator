@@ -26,7 +26,7 @@ case $state in
     case $line[1] in
       start|open|copy|delete)
         _configs=(`find ~/.tmuxinator -name \*.yml | cut -d/ -f5 | sed s:.yml::g`)
-        _values 'configs' $_configs
+	_values 'configs' $_configs
         ret=0
         ;;
     esac

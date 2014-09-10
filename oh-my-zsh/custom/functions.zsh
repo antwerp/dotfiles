@@ -253,13 +253,13 @@ function gi() {
 }
 
 
-# This is a bash function called bid (bundle id) that grabs an application ID 
-# (strings like com.brettterpstra.marky) for use with things like 
-# AppleScript, Cocoa and command line scripting where it’s safer to 
-# stick with a bundle ID than an application name. 
+# This is a bash function called bid (bundle id) that grabs an application ID
+# (strings like com.brettterpstra.marky) for use with things like
+# AppleScript, Cocoa and command line scripting where it’s safer to
+# stick with a bundle ID than an application name.
 bid() {
 	local shortname location
- 
+
 	# combine all args as regex
 	# (and remove ".app" from the end if it exists due to autocomplete)
 	shortname=$(echo "${@%%.app}"|sed 's/ /.*/g')
@@ -276,4 +276,3 @@ bid() {
 	# return the result or an error message
 	[[ -z $bundleid || $bundleid = "" ]] && echo "Error getting bundle ID for \"$@\"" || echo "$location: $bundleid"
 }
-

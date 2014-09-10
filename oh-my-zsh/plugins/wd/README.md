@@ -8,31 +8,31 @@
 
  * Add warp point to current working directory:
 
-        wd add test
+	wd add test
 
     If a warp point with the same name exists, use `add!` to overwrite it.
 
  * From an other directory, warp to test with:
 
-        wd test
+	wd test
 
  * You can warp back to previous directory, and so on, with the puncticulation syntax:
 
-        wd ..
-        wd ...
+	wd ..
+	wd ...
 
     This is a wrapper for the zsh `dirs` function.
 
  * Remove warp point test point:
 
-        wd rm test
+	wd rm test
 
  * List warp points to current directory (stored in `~/.warprc`):
 
-        wd show
+	wd show
 
  * List all warp points (stored in `~/.warprc`):
 
-        wd ls
+	wd ls
 
  * Print usage with no opts or the `help` argument.
