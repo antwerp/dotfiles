@@ -1,7 +1,8 @@
-vim/swaps
+vim/.netrwhist
+vim/backups
 vim/bundle
 vim/spell
-vim/.netrwhist
+vim/swaps
 vim/undo
 gem
 oh-my-zsh/
