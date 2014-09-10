@@ -3,7 +3,7 @@ vim/bundle
 vim/spell
 vim/.netrwhist
 vim/undo
-gem/specs
+gem
 oh-my-zsh/
 !/oh-my-zsh/custom
 *~
