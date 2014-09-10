@@ -44,7 +44,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'itspriddle/vim-marked'
 Plugin 'bling/vim-airline' 
-Plugin 'jcf/vim-latex'
+Plugin 'gerw/vim-latex-suite'
 " Plugin 'xuhdev/SingleCompile' " 
 				" http://www.topbug.net/blog/2012/03/07/use-singlecompile-to-compile-and-run-a-single-source-file-easily-in-vim/
 Plugin 'vim-scripts/c.vim'
