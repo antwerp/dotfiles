@@ -1,6 +1,8 @@
 vim/.netrwhist
 vim/backups
 vim/bundle
+vim/bundle/c.vim/*
+!/vim/bundle/c.vim/c-support/templates
 vim/spell
 vim/swaps
 vim/undo
