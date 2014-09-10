@@ -16,6 +16,9 @@ export MKL_NUM_THREADS=1
 # Ruby Version Manager (RVM)
 export PATH="$PATH:$HOME/.rvm/bin" 
 
+# Ruby Gems 
+export PATH="$PATH:$HOME/.rvm/gems" 
+
 # User packages
 export PATH="$PATH:$HOME/bin"
 

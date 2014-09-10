@@ -276,3 +276,4 @@ bid() {
 	# return the result or an error message
 	[[ -z $bundleid || $bundleid = "" ]] && echo "Error getting bundle ID for \"$@\"" || echo "$location: $bundleid"
 }
+
