@@ -49,6 +49,9 @@ Plugin 'gerw/vim-latex-suite'
 Plugin 'vim-scripts/c.vim'
 Plugin 'itspriddle/vim-marked'
 Plugin 'greyblake/vim-preview'
+Plugin 'scrooloose/syntastic'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'edkolev/tmuxline.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -74,11 +77,34 @@ augroup lexical
 	autocmd FileType text call lexical#init({ 'spell': 0 })
 augroup END
 
+" c.vim
 " use g++ compiler for c.vim
 let g:C_CCompiler = 'g++'
 
-" Configure Marked to open the right application 
+" vim-marked
+" Configure vim-marked to open the right application 
 let g:marked_app = "Marked"
+
+" vim-airline
+" Display buffers when there's only one tab open
+let g:airline#extensions#tabline#enabled = 1
+" Set serene theme
+let g:airline_theme='serene'
+" Fix powerline font symbols not showing up
+let g:airline_powerline_fonts = 1
+" Fix partially messed up powerline font symbols
+if !exists('g:airline_symbols') 
+	let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
+
+
+
+" tagbar
+" Create toggle for Tagbar
+nmap <F8> :TagbarToggle<cr>
+
+" tmuxline.vim
 
 """""""""""""""""""""""""""""""""
 " 		VUNDLE INSTRUCTIONS
@@ -123,7 +149,7 @@ set clipboard=unnamed
 " Sets paste toggle to the F5 key, 
 " so you can paste text without the indentation going berserk. 
 " http://bencrowder.net/files/vim-fu/ 
-:set pastetoggle=<F5>
+set pastetoggle=<F5>
 
 """""""""""""""""""""""""""""""""
 "			BASIC
