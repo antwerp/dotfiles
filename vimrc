@@ -53,6 +53,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'vim-scripts/mips.vim'
+Plugin 'vim-scripts/vim-auto-save'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -115,6 +116,12 @@ au BufRead,BufNewFile *.s,*.asm set syntax=mips
 " Use alternate key instead of <Tab> for completions
 let g:SuperTabMappingForward = '<c-space>'
 let g:SuperTabMappingBackward = '<s-c-space>'
+
+" vim-auto-save
+" Enable auto save
+let g:auto_save = 1
+" Do not change updatetime
+let g:auto_save_no_updatetime = 1
 
 """""""""""""""""""""""""""""""""
 " 		VUNDLE INSTRUCTIONS
