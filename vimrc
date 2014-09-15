@@ -52,6 +52,7 @@ Plugin 'greyblake/vim-preview'
 Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'vim-scripts/mips.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -105,6 +106,15 @@ let g:airline_symbols.space = "\ua0"
 nmap <F8> :TagbarToggle<cr>
 
 " tmuxline.vim
+
+" mips.vim
+" Enable MIPS syntax for assembly
+au BufRead,BufNewFile *.s,*.asm set syntax=mips
+
+" supertab
+" Use alternate key instead of <Tab> for completions
+let g:SuperTabMappingForward = '<c-space>'
+let g:SuperTabMappingBackward = '<s-c-space>'
 
 """""""""""""""""""""""""""""""""
 " 		VUNDLE INSTRUCTIONS
