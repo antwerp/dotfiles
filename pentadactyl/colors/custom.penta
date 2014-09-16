@@ -1,0 +1,25 @@
+" Pentadactyl color file
+"
+" Mantainer: Keng Fai <me@keng.me> 
+" Last Modified: 2014-09-16
+" Note: Mish-mash of stuff 
+" Version: 0.1
+" Name: Custom
+
+" https://github.com/mlerner/.vim/blob/master/bundle/pentadactylrc
+" Hints
+highlight Hint font-size: 14px; background: rgba(210,1,133,0.8) !important; border: 2px solid rgb(165,1,105); padding: 4px; border-radius: 3px; font-weight: bold; margin-left: -25px; color: white; font-family: Helvetica; line-height:1em;
+highlight HintActive background: rgba(145,197,43,0.8) !important;
+highlight HintElem background: rgba(255, 209, 20, 0.7) !important;
+" Status line
+highlight StatusLine -moz-appearance: none !important; font-weight: bold; background: transparent !important; border: 0px !important; min-height: 22px !important; text-shadow: none !important; font: normal 16px/1 'Menlo' !important; padding: 3px 0px 3px 5px !important;
+" Command line
+highlight CmdLine padding: 1px !important; font: normal 16px 'Menlo' !important;
+highlight CmdOutput font: normal 14px 'Menlo' !important;
+" Completions
+highlight CompItem font: normal 14px 'Menlo' !important;
+" Find
+highlight Find background: #d6c149; color: #000;
+
+
+" -*- vim -*- vim:set ft=vim et sw=2 sts=2:
