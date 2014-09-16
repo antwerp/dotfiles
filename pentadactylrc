@@ -9,7 +9,7 @@ group user
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set color scheme
-colorscheme custom
+colorscheme custokai
 " Possible options
 " kolor
 " lucius
@@ -101,7 +101,7 @@ cmap -builtin <down> <tab>
 cmap -builtin <c-down> <down>
 
 " Set the external editor
-set editor="/usr/local/bin/vim -f"
+set editor='/usr/local/bin/vim -f +<line> +"sil! call cursor(0, <column>)" <file>'
 
 " Mappings for bookmarklets depend on setting the keyword
 " in the Firefox bookmark manager
