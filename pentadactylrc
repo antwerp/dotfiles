@@ -1,6 +1,139 @@
-"1.1
+" Default
+""""""""""""""""""""""""""""""""""""""""""""""""""
 
-loadplugins '\.(js|penta)$'
+" Load the plugins, including CSS
+loadplugins '\.(css|js|penta)$'
 group user
 
-" vim: set ft=pentadactyl:
+" Interface
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Set color scheme
+colorscheme kolor
+" Possible options
+" kolor
+" lucius
+" molokai
+" ubuntu
+
+
+" Better looking Pentadactyl
+" https://github.com/mlerner/.vim/blob/master/bundle/pentadactylrc
+" Hints
+highlight Hint font-size: 14px; background: rgba(210,1,133,0.8) !important; border: 2px solid rgb(165,1,105); padding: 4px; border-radius: 3px; font-weight: bold; margin-left: -25px; color: white; font-family: Helvetica; line-height:1em;
+highlight HintActive background: rgba(145,197,43,0.8) !important;
+highlight HintElem background: rgba(255, 209, 20, 0.7) !important;
+" Status line
+highlight StatusLine -moz-appearance: none !important; font-weight: bold; background: transparent !important; border: 0px !important; min-height: 22px !important; text-shadow: none !important; font: normal 16px/1 'Menlo' !important; padding: 3px 0px 3px 5px !important;
+" " Command line
+" highlight CmdLine padding: 1px !important; font: normal 16px 'Menlo' !important;
+" highlight CmdOutput font: normal 14px 'Menlo' !important;
+" " Completions
+" highlight CompItem font: normal 14px 'Menlo' !important;
+" " Find
+" highlight Find background: #d6c149; color: #000;
+
+" Disable beep on errors
+set visualbell
+" highlight Bell disabled: none;
+
+" Show the tab bar only when there are multiple tabs
+set showtabline=multitab
+
+" Never show the tab line
+" set showtabline=never
+
+" Show the link destination in the command line
+set showstatuslinks=command
+
+" Search
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Navigation
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Map leader key
+map , <leader>
+
+" Show a list of buffers
+map <leader>l :ls<cr>
+
+" Go to alternate buffer
+map <leader>b :buffer #<cr>
+
+" Disable search highlight
+map <leader><space> :nohlfind
+
+" Faster j,k navigation
+map -count -modes=n j -builtin <count>3j
+map -count -modes=n k -builtin <count>3k
+
+" Use DVORAK home row keys for hint selection
+set hintkeys=aoeuidhtns
+
+" Shift is hard
+nmap -builtin ; :
+
+" Generating hint inputs for input elements that do not
+" have explicit caption. This specifies the methods used
+" to generate a textual hint
+set hintinputs=label,value,name
+
+" Follow the selected hint only on <CR>
+set followhints=1
+
+" Jump to previous and next tab
+" matches LH for navigating history
+map l gt
+map h gT
+
+" Search
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Highlight all search matches, not just the first
+set hlfind
+
+" Show the first match for a find pattern as it is typed
+set incfind
+
+" Case is significant when capital letters are typed
+set findcase=smart
+
+" Set Google as default search engine
+set defsearch=google
+
+" Tools
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Items that are completed at the :open prompts
+" s=search l=location bar h=history b=bookmarks
+set complete=slb
+
+" For command-line completion, when there are more than
+" one match, list all matches and complete the first match
+set wildmode="list:full"
+
+" Make the up/down keys work in completion lists
+cmap -builtin <up> <s-tab>
+cmap -builtin <c-up> <up>
+cmap -builtin <down> <tab>
+cmap -builtin <c-down> <down>
+
+" Set the external editor
+set editor="/usr/local/bin/vim -f"
+
+" Mappings for bookmarklets depend on setting the keyword
+" in the Firefox bookmark manager
+
+" Toggle Readability on page
+command! readability open readability
+map -g user <leader>r -ex readability
+
+" Save bookmark to Pinboard (popup with tags)
+command! pinboard open pinboard
+map -g user <leader>p -ex pinboard
+
+" Archive page to read later with Pocket
+command! pocket open pocket
+map -g user <leader>t -ex pocket
+
+" vim: set ft=vim:
+
