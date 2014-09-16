@@ -21,13 +21,20 @@ set visualbell
 " highlight Bell disabled: none;
 
 " Show the tab bar only when there are multiple tabs
-set showtabline=multitab
+" set showtabline=multitab
 
 " Never show the tab line
-" set showtabline=never
+set showtabline=never
 
 " Show the link destination in the command line
 set showstatuslinks=command
+
+" Show or hide GUI elements
+" set guioptions=
+
+" Set the application name shown after the 
+" current page title in Firefox's title bar
+set titlestring="Firefox"
 
 " Search
 """"""""""""""""""""""""""""""""""""""""""""""""""
