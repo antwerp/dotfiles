@@ -1,0 +1,105 @@
+" Make vim recognize vrapperrc as vimrc
+" vim: set ft=vim:
+
+" Use the OS clipboard by default 
+" (on versions compiled with `+clipboard`)
+set clipboard=unnamed
+" if has('unnamedplus')
+" 	  set clipboard=unnamed,unnamedplus
+" endif
+
+" Show “invisible” characters
+set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set list
+
+" Highlight current line
+set cursorline
+
+" Start scrolling three lines before the horizontal window border
+set scrolloff=3
+
+"""""""""""""""""""""""""""""""""
+" 					SEARCH
+"""""""""""""""""""""""""""""""""
+
+" Ignore case of searches
+set ignorecase
+
+" Ignore case if search pattern is all lowercase,
+" case-sensitive otherwise
+set smartcase
+
+" Highlight dynamically as pattern is typed
+set incsearch
+
+" Highlight searches
+set hlsearch
+
+"""""""""""""""""""""""""""""""""
+"				EDITING
+"""""""""""""""""""""""""""""""""
+
+" Make tabs as wide as two spaces
+set tabstop=4
+set softtabstop=4
+
+" Set shift width (when indenting text)
+set shiftwidth=4
+
+" Use multiple of shiftwidth when indenting
+set shiftround
+
+" Enable automatic indentation
+set autoindent
+
+"""""""""""""""""""""""""""""""""
+"			COMMAND SHORTCUTS
+"""""""""""""""""""""""""""""""""
+
+" Change mapleader
+let mapleader=","
+
+" Quick save  
+" http://vim.wikia.com/wiki/Quick_save 
+noremap <leader>s :update<CR>
+
+" Make semicolon a colon
+nnoremap ; :
+
+"""""""""""""""""""""""""""""""""
+"		MOVEMENT SHORTCUTS
+"""""""""""""""""""""""""""""""""
+
+" Map 'jj' in insert mode to do the same as the escape key. 
+" http://bencrowder.net/files/vim-fu/
+" :imap jj <Esc>
+
+"""""""""""""""""""""""""""""""""
+"		SEARCH SHORTCUTS
+"""""""""""""""""""""""""""""""""
+
+" Turn off Vim's default regex characters 
+" and make searches use normal regexes.
+" http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+nnoremap / /\v
+vnoremap / /\v 
+
+" Clear out a search to get rid of distracting highlighting
+" Of course, highlighting will appear for future searches
+" http://stevelosh.com/blog/2010/09/coming-home-to-vim/ 
+nnoremap <leader><space> :noh<cr>
+
+"""""""""""""""""""""""""""""""""
+"		EDITING SHORTCUTS
+"""""""""""""""""""""""""""""""""
+
+" Yank from cursor position to end of line,
+" instead of the whole line
+set saney
+
+" Enable <c-n> and <c-p> to move selection
+" up and down in the content-assist dropdown
+set contentassistmode
+
+" Always start in Normal Mode after changing tabs
+set startnormalmode
