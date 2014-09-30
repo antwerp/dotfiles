@@ -54,6 +54,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'vim-scripts/mips.vim'
 "Plugin 'vim-scripts/vim-auto-save'
+Plugin 'flazz/vim-colorschemes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -233,10 +234,9 @@ set mouse=a
 """""""""""""""""""""""""""""""""
 "				UI
 """""""""""""""""""""""""""""""""
-" Use Molokai color scheme
 syntax enable
-set background=dark
-colorscheme molokai
+" set background=dark
+colorscheme anotherdark
 
 " Disable error bells
 set noerrorbells
