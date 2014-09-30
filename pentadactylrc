@@ -30,7 +30,7 @@ set showtabline=never
 set showstatuslinks=command
 
 " Show or hide GUI elements
-" set guioptions=
+set guioptions=bCrs
 
 " Set the application name shown after the 
 " current page title in Firefox's title bar
