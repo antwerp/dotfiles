@@ -375,7 +375,10 @@ nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
 " Make semicolon a colon
-nnoremap ; :
+" nnoremap ; :
+
+" Execute current buffer in Ruby
+:map <leader>r :!ruby %<cr>
 
 """""""""""""""""""""""""""""""""
 "		MOVEMENT SHORTCUTS
