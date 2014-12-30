@@ -147,6 +147,9 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 # Vim aliases
 alias v=vim
 
+# Go to dot files
+alias dot="vim ~/dotfiles"
+
 # ZSH related
 alias zshconfig="vim ~/.zshrc"
 alias zshreload="source ~/.zshrc"
@@ -169,4 +172,3 @@ alias g=git
 
 # Common folders
 alias box="cd ~/Dropbox"
-alias dot="cd ~/dotfiles"
