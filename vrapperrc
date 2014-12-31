@@ -9,8 +9,8 @@ set clipboard=unnamed
 " endif
 
 " Show “invisible” characters
-set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_
-set list
+" set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_
+" set list
 
 " Highlight current line
 set cursorline
