@@ -24,3 +24,6 @@ export PATH="$PATH:$HOME/bin"
 
 # System packages
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin
+
+# TeX Live
+export PATH="$PATH:/usr/local/texlive/2014"
