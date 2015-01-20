@@ -1,7 +1,7 @@
 # Configuring `$PATH`
 
 # Homebrew brews (such as Vim 7.4)
-export PATH="/usr/local/bin"
+export PATH="$PATH:/usr/local/bin"
 
 # MacPorts ports
 export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
@@ -26,4 +26,4 @@ export PATH="$PATH:$HOME/bin"
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 
 # TeX Live
-export PATH="$PATH:/usr/local/texlive/2014"
+export PATH="$PATH:/usr/local/texlive/2014/bin/x86_64-darwin"
