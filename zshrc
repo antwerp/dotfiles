@@ -185,8 +185,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Git completion -- https://github.com/git/git/tree/master/contrib/completion
-zstyle ':completion:*:*:git:*' script ~/dotfiles/oh-my-zsh/custom/git-completion.bash
-fpath=(~/dotfiles $fpath)
+zstyle ':completion:*:*:git:*' script ~/.oh-my-zsh/custom/git-completion.bash
 
 # Use vi key bindings for command-line editing
 bindkey -v
