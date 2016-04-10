@@ -158,8 +158,8 @@ defaults write org.x.X11 wm_ffm -bool true
 # Time Machine                                                                #
 ###############################################################################
 
-# Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
+# Enable local Time Machine backups
+hash tmutil &> /dev/null && sudo tmutil enablelocal
 
 ###############################################################################
 # Activity Monitor                                                            #
