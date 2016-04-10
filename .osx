@@ -45,7 +45,7 @@ launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.pl
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
 
-# Disable “natural” (Lion-style) scrolling
+# Enable “natural” (Lion-style) scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
 # Set language and text formats
