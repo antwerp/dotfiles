@@ -62,6 +62,11 @@ sudo systemsetup -settimezone "America/Los_Angeles" > /dev/null
 # Stop iTunes from responding to the keyboard media keys
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
+# Magic Mouse: enable Smart Zoom with one-finger single tap
+defaults write com.apple.AppleMultitouchMouse MouseOneFingerDoubleTapGesture -int 1
+
+# Magic Mouse: enable Mission Control with double-tap
+
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
