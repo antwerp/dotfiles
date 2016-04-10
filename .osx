@@ -181,8 +181,8 @@ hash tmutil &> /dev/null && sudo tmutil enablelocal
 # Messages                                                                    #
 ###############################################################################
 
-# Disable continuous spell checking
-defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
+# Enable continuous spell checking
+defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool true
 
 ###############################################################################
 # Google Chrome & Google Chrome Canary                                        #
