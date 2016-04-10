@@ -228,9 +228,6 @@ defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Do
 # Tweetbot.app                                                                #
 ###############################################################################
 
-# Bypass the annoyingly slow t.co URL shortener
-defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
-
 ###############################################################################
 # Spectacle.app                                                               #
 ###############################################################################
