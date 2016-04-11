@@ -65,7 +65,8 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/nul
 # Magic Mouse: enable Smart Zoom with one-finger single tap
 defaults write com.apple.AppleMultitouchMouse MouseOneFingerDoubleTapGesture -int 1
 
-# Magic Mouse: enable Mission Control with double-tap
+# Magic Mouse: enable Mission Control with two-finger double-tap
+defaults write com.apple.AppleMultitouchMouse MouseTwoFingerDoubleTapGesture -int 3
 
 ###############################################################################
 # Screen                                                                      #
