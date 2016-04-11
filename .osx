@@ -72,6 +72,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerDou
 
 # Magic Mouse: swipe between full-screen apps with two fingers
 defaults write com.apple.AppleMultitouchMouse MouseTwoFingerHorizSwipeGesture -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerHorizSwipeGesture -int 2
 
 # Trackpad settings
 defaults write com.apple.AppleMultitouchTrackpad ActuateDetents -int 1
