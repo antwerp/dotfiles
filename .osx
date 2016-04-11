@@ -68,6 +68,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseOneFingerDou
 
 # Magic Mouse: enable Mission Control with two-finger double-tap
 defaults write com.apple.AppleMultitouchMouse MouseTwoFingerDoubleTapGesture -int 3
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerDoubleTapGesture -int 3
 
 # Magic Mouse: swipe between full-screen apps with two fingers
 defaults write com.apple.AppleMultitouchMouse MouseTwoFingerHorizSwipeGesture -int 2
