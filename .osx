@@ -235,8 +235,30 @@ hash tmutil &> /dev/null && sudo tmutil enablelocal
 ###############################################################################
 
 ###############################################################################
+# BetterTouchTool.app                                                         #
+###############################################################################
+
+# Copy custom BetterTouchTool gestures
+mkdir -p ~/Library/Application\ Support/BetterTouchTool
+cp -r init/bttdata2 ~/Library/Application\ Support/BetterTouchTool/bttdata2 2> /dev/null
+
+###############################################################################
+# Default Folder X.app                                                        #
+###############################################################################
+
+# Delete default DFX keybinds as they interfere with OS X defaults
+# and conflicts with Moom's window action keys
+
+###############################################################################
 # Mac App Store                                                               #
 ###############################################################################
+
+###############################################################################
+# Moom.app                                                         						#
+###############################################################################
+
+# Copy custom Moom keybinds
+cp -r init/com.manytricks.Moom.plist ~/Library/Preferences/com.manytricks.Moom.plist 2> /dev/null
 
 ###############################################################################
 # Photos                                                                      #
@@ -294,35 +316,13 @@ defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Do
 ###############################################################################
 
 ###############################################################################
-# BetterTouchTool.app                                                         #
-###############################################################################
-
-# Copy custom BetterTouchTool gestures
-mkdir -p ~/Library/Application\ Support/BetterTouchTool
-cp -r init/bttdata2 ~/Library/Application\ Support/BetterTouchTool/bttdata2 2> /dev/null
-
-###############################################################################
-# Moom.app                                                         #
-###############################################################################
-
-# Copy custom Moom keybinds
-cp -r init/com.manytricks.Moom.plist ~/Library/Preferences/com.manytricks.Moom.plist 2> /dev/null
-
-###############################################################################
-# Default Folder X.app                                                            #
-###############################################################################
-
-# Delete keybinds as they interfere with OS X defaults
-# Also conflicts with Moom's window action keys
-
-###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
 for app in "Activity Monitor" "Address Book" "Calendar" "BetterTouchTool"
 	"Contacts" "cfprefsd" "Dock" "Finder" "Google Chrome" \
 	"Google Chrome Canary" \
-	"Mail" "Messages" "Opera" "Photos" "Safari" "SizeUp" \
+	"Mail" "Messages" "Moom" "Photos" "Safari" "SizeUp" \
 	"Spectacle" "SystemUIServer" "Terminal" \
 	"Transmission" "Tweetbot" "Twitter" "iCal"; do
 	killall "${app}" &> /dev/null
