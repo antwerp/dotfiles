@@ -248,6 +248,7 @@ cp -r init/bttdata2 ~/Library/Application\ Support/BetterTouchTool/bttdata2 2> /
 
 # Delete default DFX keybinds as they interfere with OS X defaults
 # and conflicts with Moom's window action keys
+cp -r init/com.stclairsoft.DefaultFolderX5.plist ~/Library/Preferences/com.stclairsoft.DefaultFolderX5.plist 2> /dev/null
 
 ###############################################################################
 # Mac App Store                                                               #
@@ -320,7 +321,7 @@ defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Do
 ###############################################################################
 
 for app in "Activity Monitor" "Address Book" "Calendar" "BetterTouchTool"
-	"Contacts" "cfprefsd" "Dock" "Finder" "Google Chrome" \
+	"Contacts" "cfprefsd" "Default Folder X" "Dock" "Finder" "Google Chrome" \
 	"Google Chrome Canary" \
 	"Mail" "Messages" "Moom" "Photos" "Safari" "SizeUp" \
 	"Spectacle" "SystemUIServer" "Terminal" \
