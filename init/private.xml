@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+      <name>§ to Fn</name>
+      <identifier>private.danishdollar2fn</identifier>
+      <autogen>
+      		__KeyToKey__ 
+      		KeyCode::DANISH_DOLLAR, 
+      		KeyCode::FN
+      	</autogen>
+    </item>
+	<item>
+		<name>F19 to Hyper key</name>
+		<appendix>F19 to ^⌥⇧⌘</appendix>
+		<identifier>private.f192f19</identifier>
+		<autogen>
+			--KeyToKey--
+			KeyCode::F19,
+			KeyCode::COMMAND_L,
+			ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L, 
+		</autogen>
+	</item>
+	<item>
+		<name>Hyper key for QWERTY</name>
+		<item>
+			<name>Hyper + J to ↓</name>
+			<appendix>Hyper-J</appendix>
+			<identifier>private.hyper-j</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::J,
+				ModifierFlag::COMMAND_R | ModifierFlag::OPTION_R | ModifierFlag::SHIFT_R | ModifierFlag::CONTROL_R,
+				KeyCode::CURSOR_DOWN
+			</autogen>
+		</item>
+		<item>
+			<name>Hyper + H to ←</name>
+			<appendix>Hyper-H</appendix>
+			<identifier>private.hyper-h</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::H,
+				ModifierFlag::COMMAND_R | ModifierFlag::OPTION_R | ModifierFlag::SHIFT_R | ModifierFlag::CONTROL_R,
+				KeyCode::CURSOR_LEFT
+			</autogen>
+		</item>
+		<item>
+			<name>Hyper + K to ↑</name>
+			<appendix>Hyper-K</appendix>
+			<identifier>private.hyper-k</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::K,
+				ModifierFlag::COMMAND_R | ModifierFlag::OPTION_R | ModifierFlag::SHIFT_R | ModifierFlag::CONTROL_R,
+				KeyCode::CURSOR_UP
+			</autogen>
+		</item>	
+		<item>
+			<name>Hyper + L to →</name>
+			<appendix>Hyper-L</appendix>
+			<identifier>private.hyper-l</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::L,
+				ModifierFlag::COMMAND_R | ModifierFlag::OPTION_R | ModifierFlag::SHIFT_R | ModifierFlag::CONTROL_R,
+				KeyCode::CURSOR_RIGHT
+			</autogen>
+		</item>
+	</item>
+	<item>
+		<name>Hyper key for Dvorak</name>
+		<item>
+			<name>Hyper + D to ↓</name>
+			<appendix>Hyper-D</appendix>
+			<identifier>private.hyper-d</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::D,
+				ModifierFlag::COMMAND_R | ModifierFlag::OPTION_R | ModifierFlag::SHIFT_R | ModifierFlag::CONTROL_R,
+				KeyCode::CURSOR_DOWN
+			</autogen>
+		</item>
+		<item>
+			<name>Hyper + H to ↑</name>
+			<appendix>Hyper-H</appendix>
+			<identifier>private.hyper-h-dvorak</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::H,
+				ModifierFlag::COMMAND_R | ModifierFlag::OPTION_R | ModifierFlag::SHIFT_R | ModifierFlag::CONTROL_R,
+				KeyCode::CURSOR_UP
+			</autogen>
+		</item>	
+		<item>
+			<name>Hyper + T to ←</name>
+			<appendix>Hyper-T</appendix>
+			<identifier>private.hyper-t</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::T,
+				ModifierFlag::COMMAND_R | ModifierFlag::OPTION_R | ModifierFlag::SHIFT_R | ModifierFlag::CONTROL_R,
+				KeyCode::CURSOR_UP
+			</autogen>
+		</item>
+		<item>
+			<name>Hyper + N to →</name>
+			<appendix>Hyper-N</appendix>
+			<identifier>private.hyper-n</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::N,
+				ModifierFlag::COMMAND_R | ModifierFlag::OPTION_R | ModifierFlag::SHIFT_R | ModifierFlag::CONTROL_R,
+				KeyCode::CURSOR_RIGHT
+			</autogen>
+		</item>
+	</item> 
+	<item>
+		<name> Modify Help key for Windows/Mac keyboards </name> 
+		<item>
+			<name>Help Key to Forward Slash</name>
+			<appendix>help-fslash</appendix>
+			<identifier>private.help.f.slash</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::HELP,
+				KeyCode::SLASH
+			</autogen>
+		</item>
+		<item>
+			<name>Help Key to Forward Slash with Shift</name>
+			<appendix>help-fslash-shift</appendix>
+			<identifier>private.help.f.slash.shift</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::HELP, ModifierFlag::SHIFT_L,
+				KeyCode::SLASH, VK_SHIFT | ModifierFlag::NONE,
+			</autogen>
+		</item>
+	</item>
+	<item> 
+	    <name>Change Forward Delete key for Windows/Mac keyboards</name>
+	    <item>
+	      <name>Forward Delete to Eject</name>
+	      <identifier>remap.forwarddelete2eject</identifier>
+	      <autogen>__KeyToConsumer__ FROMKEYCODE_FORWARD_DELETE, ConsumerKeyCode::EJECT</autogen>
+	    </item>
+	</item>
+	<item>
+		<name>Change Forward Delete to Control_L</name>
+		<appendix>Forward Delete to Control_L</appendix>
+		<identifier>private.forwarddelete2controll</identifier>
+		<autogen>
+			--KeyToKey--
+			KeyCode::FORWARD_DELETE,
+			KeyCode::CONTROL_L
+		</autogen>
+	</item>
+</root>
