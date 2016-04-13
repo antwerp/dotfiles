@@ -292,7 +292,9 @@ defaults write com.google.Chrome.canary AppleEnableMouseSwipeNavigateWithScrolls
 # Karabiner.app                                                         			#
 ###############################################################################
 
-# Copy custom Karabiner key mappings for Hyper Key etc.
+# Copy Karabiner preferences for per-keyboard settings
+
+# Install custom key mappings for Hyper Key etc.
 mkdir -p ~/Library/Application\ Support/Karabiner
 cp -r init/private.xml ~/Library/Application\ Support/BetterTouchTool/bttdata2 2> /dev/null
 
