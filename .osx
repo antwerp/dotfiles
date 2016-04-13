@@ -294,8 +294,13 @@ defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Do
 ###############################################################################
 
 ###############################################################################
-# Spectacle.app                                                               #
+# BetterTouchTool.app                                                         #
 ###############################################################################
+
+# Make BetterTouchTool Application Support Folder
+mkdir -p ~/Library/Application\ Support/BetterTouchTool
+
+
 
 ###############################################################################
 # Default Folder X                                                            #
