@@ -293,6 +293,7 @@ defaults write com.google.Chrome.canary AppleEnableMouseSwipeNavigateWithScrolls
 ###############################################################################
 
 # Copy Karabiner preferences for per-keyboard settings
+cp -r init/org.pqrs.Karabiner.plist ~/Library/Preferences/org.pqrs.Karabiner.plist 2> /dev/null
 
 # Install custom key mappings for Hyper Key etc.
 mkdir -p ~/Library/Application\ Support/Karabiner
