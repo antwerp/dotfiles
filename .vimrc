@@ -55,6 +55,7 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'vim-scripts/mips.vim'
 "Plugin 'vim-scripts/vim-auto-save'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
