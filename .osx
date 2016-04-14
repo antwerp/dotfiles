@@ -33,7 +33,7 @@ defaults write com.apple.systemuiserver menuExtras -array \
 	"/System/Library/CoreServices/Menu Extras/User.menu"
 
 # Set highlight color to default blue
-defaults delete NSGlobalDomain AppleHighlightColor
+defaults delete NSGlobalDomain AppleHighlightColor 2> /dev/null
 
 # Always show hidden files in open, save panel
 defaults write -g AppleShowAllFiles -bool true
@@ -130,7 +130,6 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad USBMouseStopsT
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
-
 
 ###############################################################################
 # Finder                                                                      #
@@ -338,10 +337,9 @@ defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Do
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "Activity Monitor" "Address Book" "Calendar" "BetterTouchTool"
+for app in "Activity Monitor" "Address Book" "Calendar" "BetterTouchTool" \
 	"Contacts" "cfprefsd" "Default Folder X" "Dock" "Finder" "Google Chrome" \
-	"Google Chrome Canary" \
-	"Mail" "Messages" "Moom" "Photos" "Safari" "SizeUp" \
+	"Mail" "Messages" "Moom" "Photos" "Safari" \
 	"Spectacle" "SystemUIServer" "Terminal" \
 	"Transmission" "Tweetbot" "Twitter" "iCal"; do
 	killall "${app}" &> /dev/null
