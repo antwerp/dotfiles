@@ -2,7 +2,7 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="kolo"
+ZSH_THEME="honukai"
 
 # Have bash and zsh share same history
 HISTFILE=~/.bash_history
