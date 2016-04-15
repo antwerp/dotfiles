@@ -83,7 +83,8 @@ defaults write com.apple.AppleMultitouchTrackpad DragLock -bool false
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad DragLock -bool false
 defaults write com.apple.AppleMultitouchTrackpad Dragging -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool true
-defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 2
+defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad FirstClickThreshold -int 0
 defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed -bool false
 # Trackpad: control modifier key to zoom for accessibility
 defaults write com.apple.AppleMultitouchTrackpad HIDScrollZoomModifierMask -int 262144
