@@ -59,6 +59,9 @@ defaults write NSGlobalDomain AppleMetricUnits -bool false
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
 sudo systemsetup -settimezone "America/Los_Angeles" > /dev/null
 
+# Set the key repeat rate to system default
+defaults delete NSGlobalDomain KeyRepeat 2> /dev/null
+
 # Stop iTunes from responding to the keyboard media keys
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
