@@ -155,11 +155,8 @@ alias vimconfig="vim ~/.vimrc"
 # Edit with Byword
 alias byword='open -a Byword'
 
-# Bash migrate alias for Rails 4 in action
-alias migrate='bin/rake db:migrate && bin/rake db:test:prepare'
-
-# Run Sidekiq for SquadUP dev
-alias sidekiq="bundle exec sidekiq -c 5 -C config/sidekiq.yml"
+# Edit with Sublime Text
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # Git aliases
 alias g=git
@@ -168,3 +165,4 @@ alias g=git
 
 # Common folders
 alias box="cd ~/Dropbox"
+
